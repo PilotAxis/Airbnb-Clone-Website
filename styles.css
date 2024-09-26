@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+#hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("assets/banner.png");
+    width: auto;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 35px;
+    margin: 10px 10px 0 10px;
+}
+
+#navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+
+#logo {
+    width: 160px;
+    cursor: pointer;
+}
+
+.nav-links li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+}
+
+.btn-header {
+    padding: 8px 40px;
+    background-color: #ffffff;
+    border: none;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+.btn-header:hover {
+    background-color: black;
+    color: #ffffff;
+}
+
+#title {
+    font-size: 44px;
+    font-weight: 500;
+    font-family: serif;
+    color: #ffffff;
+    text-shadow: 0 0 1px black;
+    text-align: center;
+    margin-top: 220px;
+}
+
+.search-box {
+    width: 70%;
+    background-color: #ffffff;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+
+.search-box form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.search-box form input {
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.search-box form button {
+    background-color: #ff5361;
+    width: 55px;
+    height: 55px;
+    border: 0;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-box form label {
+    font-weight: 600;
+}
+
+.location {
+    flex: 1;
+}
