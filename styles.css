@@ -58,16 +58,16 @@
 
 .btn-header {
     padding: 8px 40px;
-    background-color: #ffffff;
+    background-color: #ff5361;
     border: none;
-    color: black;
+    color: white;
     text-decoration: none;
     border-radius: 25px;
     font-size: 15px;
 }
 
 .btn-header:hover {
-    background-color: black;
+    background-color: crimson;
     color: #ffffff;
 }
 
@@ -370,7 +370,7 @@ nav .fa-bars {
 
     nav .nav-links li {
         margin: 10px 0;
-        display: block;
+        display: none;
     }
 
     .btn-header {
