@@ -467,21 +467,18 @@ nav .fa-bars {
         margin-right: 10px;
     }
 
-    .columns p {
-        font-size: 2.3vw;
-    }
-
-    .main-img {
+    .divide {
+        gap: 10px;
         margin-left: 10px;
         margin-right: 10px;
     }
 
-    .tour {
-        width: 100%;
+    .columns p {
+        font-size: 2.3vw;
     }
 
     .place {
-        font-size: 1.4vw;
+        font-size: 15px;
     }
 
     .heads p {
