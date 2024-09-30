@@ -484,12 +484,20 @@ nav .fa-bars {
         font-size: 1.4vw;
     }
 
-    .trending {
-        margin-bottom: 50px;
+    .heads p {
+        font-size: 20px;
     }
 
-    .about-msg {
-        font-size: 15px;
+    .heads-1 p {
+        font-size: 20px;
+    }
+
+    .heads-2 p {
+        font-size: 20px;
+    }
+
+    .trending {
+        margin-bottom: 50px;
     }
 
     #tag {
