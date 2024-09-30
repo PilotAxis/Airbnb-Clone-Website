@@ -8,14 +8,14 @@
 #hero-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("assets/banner.png");
     width: auto;
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
     border-radius: 35px;
     margin: 10px 10px 0 10px;
 }
 
-#navigation-bar {
+#navBar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -93,7 +93,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .search-box form input {
@@ -158,23 +158,24 @@
 
 .divide {
     display: flex;
-    
+    margin-left: 70px;
+    margin-right: 70px;
+    gap: 20px;
 }
 
 .main-img {
     margin-top: 50px;
-    margin-left: 70px;
 }
 
 .tour {
-    width: 250px;
+    width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
 .place {
     font-weight: 600;
-    font-size: 1.2vw;
+    font-size: 1.9vw;
     text-align: center;
 }
 
@@ -213,8 +214,9 @@
     display: flex;
     justify-content: start;
     margin-left: 70px;
+    margin-right: 70px;
     margin-top: 50px;
-    gap: 30px;
+    gap: 20px;
 }
 
 .heads {
@@ -246,7 +248,7 @@
 
 .para {
     color: #fff;
-    font-size: 2.1vw;
+    font-size: 2.6vw;
     font-weight: 400;
     text-shadow: 0 0 1px black;
     text-align: center;
@@ -255,17 +257,22 @@
 
 .end-btn {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 #tag {
     text-decoration: none;
     color: #ffffff;
-    font-size: 1.2vw;
+    font-size: 2.7vw;
     background-color: #ff5361;
     padding: 15px 100px 15px 100px;
     border: none;
     border-radius: 50px;
+}
+
+#tag:hover {
+    background-color: crimson;
+    color: #fff;
 }
 
 .message {
@@ -273,7 +280,7 @@
     margin: 80px 100px 0 100px;
     color: #333;
     font-size: 17px;
-    line-height: 2.5vw;
+    line-height: 3.5vw;
     font-family: "poppins", sans-serif;
 }
 
@@ -318,4 +325,196 @@ nav .fa-bars {
 #insta {
     width: 2.6%;
     border-radius: 100px;
+}
+
+/**************************For Small devices**************************/
+
+@media only screen and (max-width:1050px) {
+
+    body {
+        overflow-x: hidden;
+    }
+    
+    #header {
+        margin: 0;
+        padding: 0;
+    }
+
+    #hero-section {
+        margin: 0;
+        padding-bottom: 150px;
+        border-radius: 0;
+        border: 1px solid transparent;
+    }
+
+    #logo {
+        position: fixed;
+        top: 3%;
+        left: 7%;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        display: inline-block;
+        width: 100%;
+        padding: 100px 7% 0;
+        text-align: right;
+        background: #000;
+        max-height: 100px;
+        overflow: hidden;
+        transform: max-height 0.5s;
+    }
+
+    nav .nav-links li {
+        margin: 10px 0;
+        display: block;
+    }
+
+    .btn-header {
+        background-color: #ff5361;
+        color: #fff;
+        margin: 15px 0 30px;
+        display: inline-block;
+    }
+
+    nav .fa-bars {
+        display: block;
+        position: fixed;
+        top: 4%;
+        right: 7%;
+        color: #ff5361;
+        font-size: 28px;
+    }
+
+    .active::after {
+        left: -40px;
+        transform: translate(0, 50%);
+        bottom: 50%;
+    }
+
+    .hidemenu {
+        max-height: 300px;
+    }
+
+    #hero-section h1 {
+        padding-top: 0px;
+        font-size: 7vw;
+    }
+
+    .search-box {
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px 10px 30px;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .search-box form {
+        display: block;
+    }
+
+    .search-box form input {
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .search-box form button {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+    .banner {
+        margin: 0px;
+        border-radius: 0;
+        padding: 15% 5%;
+    }
+
+    .banner h3 {
+        font-size: 7vw;
+        list-style: 8vw;
+        line-height: 110%;
+    }
+
+    .banner p {
+        font: 14px;
+    }
+
+    .banner-btn {
+        padding: 6px 15px;
+        border-radius: 4px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .subtitles {
+        text-align: center;
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+
+    .columns {
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .columns p {
+        font-size: 2.3vw;
+    }
+
+    .main-img {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .tour {
+        width: 100%;
+    }
+
+    .place {
+        font-size: 1.4vw;
+    }
+
+    .trending {
+        margin-bottom: 50px;
+    }
+
+    .about-msg {
+        font-size: 15px;
+    }
+
+    #tag {
+        font-size: 2.1vw;
+    }
+
+    #tag:hover {
+        background-color: crimson;
+        color: white;
+    }
+
+    .message p {
+        line-height: 30px;
+    }
+
+    #insta {
+        width: 30px;
+    }
+
+    #linkedin {
+        width: 34px;
+    }
+
+    #twitter {
+        width: 34px;
+    }
+
 }

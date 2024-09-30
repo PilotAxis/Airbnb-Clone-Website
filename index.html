@@ -20,7 +20,7 @@
         <!-- Hero Section -->
         <div id="hero-section">
             <!-- Navigation Bar Links -->
-            <nav id="navigation-bar">
+            <nav id="navBar">
                 <a href="index.html"><img id="logo" src="assets/logo.png" alt="Airbnb logo"></a>
                 <ul class="nav-links">
                     <li class="active"><a href="index.html">Popular Places</a></li>
@@ -235,14 +235,28 @@
 
     <!-- Footer of the site -->
     <div class="footer">
-        <img id="linkedin" src="https://static.vecteezy.com/system/resources/previews/023/986/970/original/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png" alt="">
-        <img id="insta" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="">
-        <img id="twitter" src="https://img.freepik.com/premium-vector/new-twitter-logo-x-2023-twitter-x-logo-official-vector-download_691560-10797.jpg?semt=ais_hybrid" alt="">
+        <img id="linkedin"
+            src="https://static.vecteezy.com/system/resources/previews/023/986/970/original/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png"
+            alt="">
+        <img id="insta"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+            alt="">
+        <img id="twitter"
+            src="https://img.freepik.com/premium-vector/new-twitter-logo-x-2023-twitter-x-logo-official-vector-download_691560-10797.jpg?semt=ais_hybrid"
+            alt="">
 
 
         <hr>
         <p>Copyright &copy, PilotAxis 2024</p>
     </div>
+
+    <script>
+        var navBar = document.getElementById("navBar");
+        function togglebtn() {
+            // var navBar = document.querySelector("navBar");
+            navBar.classList.toggle("hidemenu");
+        }
+    </script>
 </body>
 
 </html>
