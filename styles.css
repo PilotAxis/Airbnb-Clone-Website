@@ -517,4 +517,8 @@ nav .fa-bars {
         width: 34px;
     }
 
+    .message {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
