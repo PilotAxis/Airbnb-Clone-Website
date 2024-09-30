@@ -308,7 +308,7 @@
     padding-bottom: 15px;
 }
 
-nav .fa-bars {
+#navBar .fa-bars {
     display: none;
 }
 
@@ -353,7 +353,7 @@ nav .fa-bars {
         left: 7%;
     }
 
-    nav {
+    #navBar {
         position: fixed;
         top: 0;
         left: 0;
@@ -368,9 +368,9 @@ nav .fa-bars {
         transform: max-height 0.5s;
     }
 
-    nav .nav-links li {
+    .nav-links li {
         margin: 10px 0;
-        display: none;
+        display: block;
     }
 
     .btn-header {
@@ -380,7 +380,7 @@ nav .fa-bars {
         display: inline-block;
     }
 
-    nav .fa-bars {
+    #navBar .nav-links.fa-bars {
         display: block;
         position: fixed;
         top: 4%;
