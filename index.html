@@ -12,7 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-        <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/42c1b12e10.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -23,15 +24,13 @@
             <!-- Navigation Bar Links -->
             <nav id="navBar">
                 <a href="index.html"><img id="logo" src="assets/logo.png" alt="Airbnb logo"></a>
-                <div class="menu-icon">
-                    <i class="fa-duotone fa-solid fa-bars"></i>
-                </div>
                 <ul class="nav-links">
                     <li class="active"><a href="index.html">Popular Places</a></li>
                     <li><a href="packages.html">Outdoor packages</a></li>
                     <li><a href="houses.html">My Houses</a></li>
                 </ul>
                 <a href="#" class="btn-header">Register Now</a>
+                <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
             </nav>
 
             <!-- Hero Content of the Website -->
@@ -253,6 +252,13 @@
         <hr>
         <p>Copyright &copy, PilotAxis 2024</p>
     </div>
+
+    <script>
+        var navBar = document.getElementById("navBar");
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu");
+        }
+    </script>
 </body>
 
 </html>
