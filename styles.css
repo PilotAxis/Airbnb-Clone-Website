@@ -308,8 +308,9 @@
     padding-bottom: 15px;
 }
 
-#navBar .fa-bars {
+.menu-icon {
     display: none;
+    cursor: pointer;
 }
 
 #linkedin {
@@ -334,11 +335,6 @@
     body {
         overflow-x: hidden;
     }
-    
-    #header {
-        margin: 0;
-        padding: 0;
-    }
 
     #hero-section {
         margin: 0;
@@ -358,45 +354,22 @@
         top: 0;
         left: 0;
         z-index: 100;
-        display: inline-block;
+        display: flex;
         width: 100%;
         padding: 100px 7% 0;
         text-align: right;
-        background: #000;
+        background: black;
         max-height: 100px;
-        overflow: hidden;
-        transform: max-height 0.5s;
+        /* overflow: hidden; */
+        /* transform: max-height 0.5s; */
     }
 
     .nav-links li {
-        margin: 10px 0;
-        display: block;
+        display: none;
     }
 
     .btn-header {
-        background-color: #ff5361;
-        color: #fff;
-        margin: 15px 0 30px;
-        display: inline-block;
-    }
-
-    #navBar .nav-links.fa-bars {
-        display: block;
-        position: fixed;
-        top: 4%;
-        right: 7%;
-        color: #ff5361;
-        font-size: 28px;
-    }
-
-    .active::after {
-        left: -40px;
-        transform: translate(0, 50%);
-        bottom: 50%;
-    }
-
-    .hidemenu {
-        max-height: 300px;
+        display: none;
     }
 
     #hero-section h1 {
